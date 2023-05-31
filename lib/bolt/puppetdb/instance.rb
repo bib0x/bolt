@@ -18,7 +18,8 @@ module Bolt
 
       def make_query(query, path = nil)
         body = JSON.generate(query: query)
-        url = "#{uri}/pdb/query/v4"
+        #url = "#{uri}/pdb/query/v4"
+        url = "#{uri}/v4"
         url += "/#{path}" if path
 
         begin
